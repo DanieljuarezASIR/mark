@@ -1,4 +1,11 @@
-﻿# NODEJS, EXPRESS, MONGODB
+﻿author: ricochet
+title: NODEJS, EXPRESS, MONGODB
+subtitle: IES Virgen del Carmen (Jaén)
+lang: en
+cover: images/imagen.png
+theme: ribbon
+
+﻿## NODEJS, EXPRESS, MONGODB
 
 
 ![enter image description here](https://lh3.googleusercontent.com/Zc_zUlDxaRtgmiUUMcCdsqJI4ZKXfSzSnSJaaKMWy-sgjgp2sGgxXFyTIp1g2Yo2lGhK3asVu9Pe)
