@@ -210,10 +210,28 @@ sudo express (Creará el esqueleto de la app)
   <!-- _S9SLIDE_ -->
 <h2 id="problemas-durante-el-curso">Problemas durante el curso</h2>
 
-<ul>
-  <li>Problema de la autenticación mongodb - /auth al meter el middleware</li>
-  <li>Checklist en register.jade - cambiar el order.model.js (email_on_ready), problema derivado de la actualización (stack overflow)</li>
-</ul>
+<h3 id="problema-con-la-conexión-a-la-bd">Problema con la conexión a la BD</h3>
+<p>Este problema lo detectamos la primera vez que forzamos la conexión de Node con Mongo haciendo un login con un usuario, cuando establecíamos el middleware de la librería passport para la autenticación de usuarios.</p>
+
+<p><img src="https://lh3.googleusercontent.com/bUDMAfaYZyCb46ZqiblCxAitRB5i4-EgkJBQdP0CoMQgYaUEVZoqdiErQHq0UizBFPLJMbZPY_of" alt="enter image description here" /></p>
+
+<p>El fallo estaba en el archivo de configuración de Mongo donde se establece la ruta donde se almacenan las bases de datos.</p>
+
+<p><img src="https://lh3.googleusercontent.com/QBMmEj5WqGuTaLMPa6TJ1kS4ZMvmKtVpkAszAiLHsX6mklvmtJV518DqINWuERM3MPJwfWjSnP7g" alt="enter image description here" /></p>
+
+<h3 id="problema-con-la-variable-booleana">Problema con la variable Booleana</h3>
+
+<p>Para solucionar este problema cambiamos el tipo de dato.</p>
+
+<p><img src="https://lh3.googleusercontent.com/NML32NGkuSR_im0MjFAnjiGU3keMEB7xJLyE7RXryn03Gmum-H27TV2RC9TCBB5aID7AKsfEHmJv" alt="enter image description here" /></p>
+
+<h4 id="referenciahttpsstackoverflowcomquestions52409199cast-to-boolean-failed-for-value-on-path-sell">Referencia:https://stackoverflow.com/questions/52409199/cast-to-boolean-failed-for-value-on-path-sell</h4>
+
+<p>Esto supuso tener que modificar ciertas partes de los ficheros para que todo funcionase como debería</p>
+
+<p><img src="https://lh3.googleusercontent.com/njtlHNMcOXjhcY1odml5o4_JiBSFFGbuAc-nr3kDcFPwFrQESvb6sYKB8pbrGJYtv8OOh0uHqNIE" alt="enter image description here" /></p>
+
+<p><img src="https://lh3.googleusercontent.com/MfNYF0webPTRdcj75H_n9bAxCPiSKhgLdAE8gEMzoMdjFx-_XqvV2O93wfyLrasfz1zEBnLB1VNC" alt="enter image description here" /></p>
 
 
 </section>

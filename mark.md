@@ -129,8 +129,33 @@ Una vez el administrador modifica el estado del pedido a **ready** nodemailer en
 
 ## Problemas durante el curso
 
-* Problema de la autenticación mongodb - /auth al meter el middleware
-* Checklist en register.jade - cambiar el order.model.js (email_on_ready), problema derivado de la actualización (stack overflow)
+### Problema con la conexión a la BD
+Este problema lo detectamos la primera vez que forzamos la conexión de Node con Mongo haciendo un login con un usuario, cuando establecíamos el middleware de la librería passport para la autenticación de usuarios.
+
+![enter image description here](https://lh3.googleusercontent.com/bUDMAfaYZyCb46ZqiblCxAitRB5i4-EgkJBQdP0CoMQgYaUEVZoqdiErQHq0UizBFPLJMbZPY_of)
+
+
+
+
+El fallo estaba en el archivo de configuración de Mongo donde se establece la ruta donde se almacenan las bases de datos.
+
+![enter image description here](https://lh3.googleusercontent.com/QBMmEj5WqGuTaLMPa6TJ1kS4ZMvmKtVpkAszAiLHsX6mklvmtJV518DqINWuERM3MPJwfWjSnP7g)
+
+
+### Problema con la variable Booleana
+
+Para solucionar este problema cambiamos el tipo de dato.
+
+![enter image description here](https://lh3.googleusercontent.com/NML32NGkuSR_im0MjFAnjiGU3keMEB7xJLyE7RXryn03Gmum-H27TV2RC9TCBB5aID7AKsfEHmJv)
+
+
+#### Referencia:https://stackoverflow.com/questions/52409199/cast-to-boolean-failed-for-value-on-path-sell
+
+Esto supuso tener que modificar ciertas partes de los ficheros para que todo funcionase como debería
+
+![enter image description here](https://lh3.googleusercontent.com/njtlHNMcOXjhcY1odml5o4_JiBSFFGbuAc-nr3kDcFPwFrQESvb6sYKB8pbrGJYtv8OOh0uHqNIE)
+
+![enter image description here](https://lh3.googleusercontent.com/MfNYF0webPTRdcj75H_n9bAxCPiSKhgLdAE8gEMzoMdjFx-_XqvV2O93wfyLrasfz1zEBnLB1VNC)
 
 
 
