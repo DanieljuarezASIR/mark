@@ -8,10 +8,6 @@ theme: ribbon
 ## NODEJS, EXPRESS, MONGODB
 
 
-![enter image description here](https://lh3.googleusercontent.com/Zc_zUlDxaRtgmiUUMcCdsqJI4ZKXfSzSnSJaaKMWy-sgjgp2sGgxXFyTIp1g2Yo2lGhK3asVu9Pe)
-
-
-
  - **NodeJS:** Es una plataforma o entorno de ejecución para desarrollar con Javascript del lado del servidor. Está diseñado para generar aplicaciones web de forma altamente optimizada.
  - **ExpressJS:**  Es un framework sobre NodeJS que nos permite trabajar con el protocolo HTTP y tener sistemas de rutas.
  - **MongoDB:**  Es una base de datos NoSQL que nos permite trabajar con documentos json binarios (bson), en lugar de utilizar el sistema clásico de tablas y relaciones, lo que hace que se muy veloz. Tiene colecciones de documentos y estos documentos son objetos json (bson) y los datos se almacenan de manera binaria para aumentar le rendimiento.
@@ -157,6 +153,7 @@ Esto supuso tener que modificar ciertas partes de los ficheros para que todo fun
 ![enter image description here](https://lh3.googleusercontent.com/njtlHNMcOXjhcY1odml5o4_JiBSFFGbuAc-nr3kDcFPwFrQESvb6sYKB8pbrGJYtv8OOh0uHqNIE)
 
 ![enter image description here](https://lh3.googleusercontent.com/MfNYF0webPTRdcj75H_n9bAxCPiSKhgLdAE8gEMzoMdjFx-_XqvV2O93wfyLrasfz1zEBnLB1VNC)
+
 
 
 
